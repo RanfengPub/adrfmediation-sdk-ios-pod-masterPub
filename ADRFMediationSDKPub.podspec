@@ -7,16 +7,16 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ADRFMediationSDK'
+  s.name             = 'ADRFMediationSDKPub'
   s.version          = '3.9.9.12032'
-  s.summary          = 'A short description of ADRFMediationSDK.'
+  s.summary          = 'A short description of ADRFMediationSDKPub.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-  s.homepage         = 'https://github.com/ADRanfeng/adrfmediation-sdk-ios-pod.git'
+  s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.authors = {"business@ssdmobile.cn"=>"business@ssdmobile.cn"}
-  s.source           = { :git => 'https://github.com/ADRanfeng/adrfmediation-sdk-ios-pod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
 
@@ -24,9 +24,9 @@ TODO: Add long description of the pod here.
   
   s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
-  s.dependency 'ADRFMediationKit', '~> 0.7.4.12031'
-  s.dependency 'ADRFMediationNetwork', '~> 0.2.1.0'
-  s.dependency 'ADRFMediationLocationManager','~> 0.2.1.01301'
+  s.dependency 'ADRFMediationKitPub', '~> 0.7.4.12031'
+  s.dependency 'ADRFMediationNetworkPub', '~> 0.2.1.0'
+  s.dependency 'ADRFMediationLocationManagerPub','~> 0.2.1.01301'
   s.library = 'sqlite3'
   s.static_framework = true
   s.requires_arc = true
@@ -41,11 +41,13 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'ADRFMediationSDKPlatforms' do |sp|
+
     sp.subspec 'gdt' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gdt/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
       ssp.dependency 'GDTMobSDK', '4.15.22'
     end
+
     sp.subspec 'gdt-without' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gdt/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
@@ -57,6 +59,7 @@ TODO: Add long description of the pod here.
       ssp.dependency 'ADRFMediationSDK/core'
       ssp.dependency 'BaiduMobAdSDK', '5.373'
     end
+
     sp.subspec 'baidu-without' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/baidu/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
@@ -68,6 +71,7 @@ TODO: Add long description of the pod here.
       ssp.dependency 'ADRFMediationSDK/core'
       ssp.dependency 'Ads-CN', '6.5.0.9'
     end
+
     sp.subspec 'bu-without' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/bu/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
@@ -79,6 +83,7 @@ TODO: Add long description of the pod here.
       ssp.dependency 'ADRFMediationSDK/core'
       ssp.dependency 'KSAdSDK', '3.3.72'
     end
+
     sp.subspec 'ks-without' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/ks/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
@@ -90,6 +95,7 @@ TODO: Add long description of the pod here.
       ssp.dependency 'ADRFMediationSDK/core'
       ssp.dependency 'TianmuSDK', '2.2.9.2'
     end
+
     sp.subspec 'tianmu-without' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/tianmu/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
@@ -99,8 +105,9 @@ TODO: Add long description of the pod here.
     sp.subspec 'ranfeng' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/ranfeng/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
-      ssp.dependency 'ADRanFengSDK', '2.2.9.2'
+      ssp.dependency 'ADRanFengSDKPub', '2.2.9.2'
     end
+    
     sp.subspec 'ranfeng-without' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/ranfeng/*.xcframework'
       ssp.dependency 'ADRFMediationSDK/core'
