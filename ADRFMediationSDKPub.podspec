@@ -102,7 +102,7 @@ Pod::Spec.new do |s|
     sp.subspec 'ranfeng' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/ranfeng/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'ADRanFengSDKPub', '2.2.9.2'
+      ssp.dependency 'ADRanFengSDKStandard', '2.2.9.2'
     end
     
     sp.subspec 'ranfeng-without' do |ssp|
