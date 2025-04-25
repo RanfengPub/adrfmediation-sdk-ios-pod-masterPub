@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version          = '3.9.9.12032'
   s.summary          = 'A mediation SDK for integrating multiple ad networks on iOS. '
   s.description      = 'A mediation SDK for integrating multiple ad networks on iOS. integrat gdt,badu,ks,gromore,ranfeng'
-  s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub.git'
+  s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.authors          = {"business@ssdmobile.cn"=>"business@ssdmobile.cn"}
   s.source           = { :git => 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub.git', :tag => s.version.to_s }
@@ -21,30 +21,31 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit'
   
-  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 
   s.dependency 'ADRFMediationKitPub', '~> 0.7.4.12031'
   s.dependency 'ADRFMediationNetworkPub', '~> 0.2.1.0'
   s.dependency 'ADRFMediationLocationManagerPub','~> 0.2.1.01301'
 
-  #强制覆盖
-  s.pod_target_xcconfig = { 'IPHONEOS_DEPLOYMENT_TARGET' => '12.0' }
-
-  s.library = 'sqlite3'
-  s.library = 'resolv'
-
+  
+  s.libraries = 'sqlite3', 'resolv'
+  
   s.static_framework = true
   s.requires_arc = true
 
-  
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'OTHER_LDFLAGS' => '-ObjC'
+  }
+
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' } 
 
 
   s.default_subspecs = 'core'
 
+
   s.subspec 'core' do |sp|
-    s.vendored_frameworks = 'ADRFMediationSDK/Classes/core/*.xcframework'
+    sp.vendored_frameworks = 'ADRFMediationSDK/Classes/core/*.xcframework'
   end
 
 
