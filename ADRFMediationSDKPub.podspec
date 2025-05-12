@@ -125,16 +125,16 @@ Pod::Spec.new do |s|
     end
 
 
-    sp.subspec 'gromore' do |ssp|
-      ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
-      ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'Ads-CN-Beta/CSJMediation', '6.6.0.0'
-    end
+    # sp.subspec 'gromore' do |ssp|
+    #   ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
+    #   ssp.dependency 'ADRFMediationSDKPub/core'
+    #   ssp.dependency 'Ads-CN-Beta/CSJMediation', '6.6.0.0'
+    # end
 
-    sp.subspec 'gromore-without' do |ssp|
-      ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
-      ssp.dependency 'ADRFMediationSDKPub/core'
-    end
+    # sp.subspec 'gromore-without' do |ssp|
+    #   ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
+    #   ssp.dependency 'ADRFMediationSDKPub/core'
+    # end
 
 
   end
