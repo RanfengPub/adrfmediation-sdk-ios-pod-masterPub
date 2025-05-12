@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ADRFMediationSDKPub'
   # s.version          = '3.9.9.12032-gro'
-  s.version          = '3.9.9.12033'
+  s.version          = '3.9.9.12034'
   s.summary          = 'A mediation SDK for integrating multiple ad networks on iOS. '
   s.description      = 'A mediation SDK for integrating multiple ad networks on iOS. integrat gdt,badu,ks,gromore,ranfeng'
   s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub'
@@ -125,16 +125,16 @@ Pod::Spec.new do |s|
     end
 
 
-    # sp.subspec 'gromore' do |ssp|
-    #   ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
-    #   ssp.dependency 'ADRFMediationSDKPub/core'
-    #   ssp.dependency 'Ads-CN-Beta/CSJMediation', '6.6.0.0'
-    # end
+    sp.subspec 'gromore' do |ssp|
+      ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
+      ssp.dependency 'ADRFMediationSDKPub/core'
+      ssp.dependency 'Ads-CN-Beta/CSJMediation', '6.6.0.0'
+    end
 
-    # sp.subspec 'gromore-without' do |ssp|
-    #   ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
-    #   ssp.dependency 'ADRFMediationSDKPub/core'
-    # end
+    sp.subspec 'gromore-without' do |ssp|
+      ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gromore/*.xcframework'
+      ssp.dependency 'ADRFMediationSDKPub/core'
+    end
 
 
   end
