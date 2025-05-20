@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ADRFMediationSDKPub'
   # s.version          = '3.9.9.12032-gro'
-  s.version          = '3.9.9.12034'
+  s.version          = '3.9.9.12035'
   s.summary          = 'A mediation SDK for integrating multiple ad networks on iOS. '
   s.description      = 'A mediation SDK for integrating multiple ad networks on iOS. integrat gdt,badu,ks,gromore,ranfeng'
   s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub'
@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
     sp.subspec 'gdt' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/gdt/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'GDTMobSDK', '4.15.22'
+      ssp.dependency 'GDTMobSDK', '4.15.40'
     end
 
     sp.subspec 'gdt-without' do |ssp|
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
     sp.subspec 'baidu' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/baidu/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'BaiduMobAdSDK', '5.373'
+      ssp.dependency 'BaiduMobAdSDK', '5.391'
     end
 
     sp.subspec 'baidu-without' do |ssp|
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
     sp.subspec 'ks' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/ks/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'KSAdSDK', '3.3.72'
+      ssp.dependency 'KSAdSDK', '3.3.76.5'
     end
 
     sp.subspec 'ks-without' do |ssp|
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
     sp.subspec 'tianmu' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/tianmu/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'TianmuSDK', '2.2.9.2'
+      ssp.dependency 'TianmuSDK', '3.0.0.1'
     end
 
     sp.subspec 'tianmu-without' do |ssp|
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
     sp.subspec 'ranfeng' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/ranfeng/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'ADRanFengSDKStandard', '2.2.9.3'
+      ssp.dependency 'ADRanFengSDKStandard', '2.2.9.4'
     end
     
     sp.subspec 'ranfeng-without' do |ssp|
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
     sp.subspec 'bu' do |ssp|
       ssp.vendored_frameworks = 'ADRFMediationSDK/Classes/bu/*.xcframework'
       ssp.dependency 'ADRFMediationSDKPub/core'
-      ssp.dependency 'Ads-CN', '6.5.0.9'
+      ssp.dependency 'Ads-CN/BUAdSDK', '6.8.1.1'
     end
 
 
