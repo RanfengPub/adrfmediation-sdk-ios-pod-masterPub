@@ -81,7 +81,7 @@ FOUNDATION_EXPORT ADRFMediationAdapterPlatform _Nonnull const ADRFMediationAdapt
 
 FOUNDATION_EXPORT ADRFMediationAdapterPlatform _Nonnull const ADRFMediationAdapterPlatformTM;
 
-FOUNDATION_EXPORT ADRFMediationAdapterPlatform _Nonnull const ADRFMediationAdapterPlatformRF;
+FOUNDATION_EXPORT ADRFMediationAdapterPlatform _Nonnull const ADRFMediationAdapterPlatformInnoAds;
 
 FOUNDATION_EXPORT ADRFMediationAdapterPlatform _Nonnull const ADRFMediationAdapterPlatformGromore;
 

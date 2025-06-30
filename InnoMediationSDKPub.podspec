@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InnoMediationSDKPub'
-  s.version          = '3.9.9.120361'
+  s.version          = '3.9.9.12037'
   s.summary          = 'A mediation SDK for integrating multiple ad networks on iOS. '
   s.description      = 'A mediation SDK for integrating multiple ad networks on iOS. integrat gdt,badu,ks,gromore,ranfeng'
   s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub'
@@ -99,14 +99,14 @@ Pod::Spec.new do |s|
     end
 
 
-    sp.subspec 'ranfeng' do |ssp|
-      ssp.vendored_frameworks = 'InnoMediationSDK/Classes/ranfeng/*.xcframework'
+    sp.subspec 'InnoAds' do |ssp|
+      ssp.vendored_frameworks = 'InnoMediationSDK/Classes/InnoAds/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
       ssp.dependency 'InnoAdsSDKStandard', '2.2.9.5'
     end
-    
-    sp.subspec 'ranfeng-without' do |ssp|
-      ssp.vendored_frameworks = 'InnoMediationSDK/Classes/ranfeng/*.xcframework'
+
+    sp.subspec 'InnoAds-without' do |ssp|
+      ssp.vendored_frameworks = 'InnoMediationSDK/Classes/InnoAds/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
     end
     
