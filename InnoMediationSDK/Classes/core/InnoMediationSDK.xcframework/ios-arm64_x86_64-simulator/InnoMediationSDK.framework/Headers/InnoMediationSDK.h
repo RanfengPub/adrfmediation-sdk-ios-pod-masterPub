@@ -1,7 +1,7 @@
 //
 //  ADRFMediationSDK.h
 //  ADRFMediationSDK
-//  3.9.9.12037
+//  3.9.9.12038
 //  Created by 陈坤 on 2020/3/24.
 //  Updated by suancai on 2024/07/22 09:17.
 //
