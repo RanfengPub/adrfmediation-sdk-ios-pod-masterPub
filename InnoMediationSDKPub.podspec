@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InnoMediationSDKPub'
-  s.version          = '3.9.9.12038'
+  s.version          = '4.0.1.06133'
   s.summary          = 'A mediation SDK for integrating multiple ad networks on iOS. '
   s.description      = 'A mediation SDK for integrating multiple ad networks on iOS. integrat gdt,badu,ks,gromore,ranfeng'
   s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub'
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit'
   
 
-  s.dependency 'ADRFMediationKitPub', '~> 0.7.4.12032'
+  s.dependency 'ADRFMediationKitPub', '~> 0.7.6.02251'
   s.dependency 'ADRFMediationNetworkPub', '~> 0.2.1.0'
   s.dependency 'ADRFMediationLocationManagerPub','~> 0.2.1.01301'
 
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
     sp.subspec 'tianmu' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/tianmu/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      ssp.dependency 'TianmuSDK', '3.0.0.1'
+      ssp.dependency 'TianmuSDK', '3.0.1.2'
     end
 
     sp.subspec 'tianmu-without' do |ssp|
@@ -102,7 +102,7 @@ Pod::Spec.new do |s|
     sp.subspec 'InnoAds' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/InnoAds/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      ssp.dependency 'InnoAdsSDKStandard', '2.2.9.5'
+      ssp.dependency 'InnoAdsSDKStandard', '3.0.1.2'
     end
 
     sp.subspec 'InnoAds-without' do |ssp|
@@ -127,7 +127,7 @@ Pod::Spec.new do |s|
     # sp.subspec 'gromore' do |ssp|
     #   ssp.vendored_frameworks = 'InnoMediationSDK/Classes/gromore/*.xcframework'
     #   ssp.dependency 'InnoMediationSDKPub/core'
-    #   ssp.dependency 'Ads-CN-Beta/CSJMediation', '6.6.0.0'
+    #   ssp.dependency 'Ads-CN-Beta/CSJMediation', '7.0.0.3'
     # end
 
     # sp.subspec 'gromore-without' do |ssp|
