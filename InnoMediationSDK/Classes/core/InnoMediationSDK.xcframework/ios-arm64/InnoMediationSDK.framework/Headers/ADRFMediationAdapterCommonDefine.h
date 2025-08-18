@@ -61,6 +61,8 @@ FOUNDATION_EXPORT ADRFMediationAdapterAdType _Nonnull const ADRFMediationAdapter
 
 FOUNDATION_EXPORT ADRFMediationAdapterAdType _Nonnull const ADRFMediationAdapterAdTypeNative;
 
+FOUNDATION_EXPORT ADRFMediationAdapterAdType _Nonnull const ADRFMediationAdapterAdTypeSuspension;
+
 FOUNDATION_EXPORT ADRFMediationAdapterAdType _Nonnull const ADRFMediationAdapterAdTypeRewardvod;
 
 FOUNDATION_EXPORT ADRFMediationAdapterAdType _Nonnull const ADRFMediationAdapterAdTypeInterstitial;

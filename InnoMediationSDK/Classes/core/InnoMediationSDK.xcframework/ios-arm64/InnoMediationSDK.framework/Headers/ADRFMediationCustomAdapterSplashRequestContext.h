@@ -14,13 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak, nullable) UIWindow *window;
 @property (nonatomic, weak, nullable) UIView *bottomView;/**< 开屏广告底部视图 */
-@property (nonatomic, weak) UIView<ADRFMediationAdapterSplashSkipViewProtocol> *skipView;
-
-/**
- 激励相关参数
- */
-@property (nonatomic, copy, nullable) NSString *userId;
-@property (nonatomic, copy, nullable) NSString *extra;
 
 @end
 

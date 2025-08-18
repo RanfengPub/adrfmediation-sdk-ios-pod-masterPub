@@ -41,12 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)biddingResult:(ADRFMediationSDKSourceBiddingResult)result
              AllPrice:(NSArray *)allPrices;
 
-
-// MARK: Other
-
-/// 激励视频广告是否支持服务端验证, 默认 false
-- (bool)canServerVerrify;
-
 @end
 
 
@@ -81,8 +75,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)trackSplashAdClosed;
 /// 三方平台关闭落地页回调时子类适配器中调用方法
 - (void)trackSplashAdLandingPageClosed;
-/// 三方平台开屏激励回调时子类适配器中调用方法
-- (void)trackSplashAdDidRewardEffective:(NSDictionary *)info;
 
 @end
 

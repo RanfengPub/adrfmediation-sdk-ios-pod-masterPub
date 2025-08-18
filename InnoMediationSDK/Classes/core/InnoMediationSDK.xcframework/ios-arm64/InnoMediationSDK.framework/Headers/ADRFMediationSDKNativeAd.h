@@ -77,26 +77,9 @@ typedef NS_ENUM(NSUInteger, ADRFMediationSDKNativeAdStatus) {
 @property (nonatomic, assign) BOOL muted;
 
 /**
- 是否静音播放详情页视频 默认YES，
- 支持平台：优量汇
- */
-@property (nonatomic, assign) BOOL detailPageVideoMuted;
-
-/**
- 模板信息流内边距  默认（16，16，12，16）（部分平台支持，其余需后台设置）
- */
-@property (nonatomic, assign) UIEdgeInsets insets;
-
-/**
  信息流自动播放，默认WiFi自动播放 开启后WiFi/4G自动播放
  */
 @property(nonatomic ,assign) BOOL autoPlay;
-
-/**
- 模版信息流上文下图设置为NO，左图右文设置为YES。默认为NO，且该属性只对京准通平台有效。
- */
-@property (nonatomic ,assign) BOOL graphicTypeJZT;
-
 
 @end
 

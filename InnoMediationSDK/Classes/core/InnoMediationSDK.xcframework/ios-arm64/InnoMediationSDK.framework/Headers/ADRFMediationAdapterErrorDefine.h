@@ -22,6 +22,7 @@ typedef NSInteger ADRFMediationAdapterErrorCode NS_EXTENSIBLE_STRING_ENUM;
 // | TM        | 36   |
 // | RF        | 37   |
 
+
 // cd为广告类型，以01开始，每次增1
 // | adType        | code |
 // | ------------- | ---- |
@@ -47,6 +48,8 @@ typedef NSInteger ADRFMediationAdapterErrorCode NS_EXTENSIBLE_STRING_ENUM;
 extern const ADRFMediationAdapterErrorCode ADRF_SDK_SPLASH_TIMEOUT;
 // 横屏不加载开屏广告
 extern const ADRFMediationAdapterErrorCode ADRF_SDK_SPLASH_HORIZONTAL;
+//splash未传window
+extern const ADRFMediationAdapterErrorCode ADRF_SDK_SPLASH_NOWINDOW;
 // banner广告获取超时
 extern const ADRFMediationAdapterErrorCode ADRF_SDK_BANNER_TIMEOUT;
 // appId为空

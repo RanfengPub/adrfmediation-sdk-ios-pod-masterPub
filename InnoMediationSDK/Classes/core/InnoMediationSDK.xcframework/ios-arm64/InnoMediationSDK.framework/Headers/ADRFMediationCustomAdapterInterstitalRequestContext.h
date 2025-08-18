@@ -11,10 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ADRFMediationCustomAdapterInterstitalRequestContext : ADRFMediationCustomAdapterRequestContext
 
-@property (nonatomic, assign) NSValue *adSizeValue;
 @property (nonatomic, assign) BOOL isFullScreen;
 @property (nonatomic, assign) BOOL isMuted;
-@property (nonatomic, assign) BOOL detailPageVideoMuted;
 
 @end
 

@@ -42,15 +42,6 @@ viewControllerForPresentingModalView
  场景id
  */
 @property (nonatomic, copy, nullable) NSString *scenesId;
-/**
- 用户id （用户在App内的userID，用于激励视频服务器验证，如无需服务器验证可不传）
- */
-@property (nonatomic, copy, nullable) NSString *userId;
-
-/**
- 其他信息 （服务器端验证回调中包含的可选自定义奖励字符串，可选）
- */
-@property (nonatomic, copy, nullable) NSString *extra;
 
 /**
  代理回调
@@ -66,28 +57,11 @@ viewControllerForPresentingModalView
 @property (nonatomic, assign) NSTimeInterval tolerateTimeout;
 
 /**
- 跳过按钮的类型，可以通过此接口替换开屏广告的跳过按钮样式；(已不支持自定义跳过按钮功能)
- */
-@property (nonatomic, strong, null_resettable) UIView<ADRFMediationAdapterSplashSkipViewProtocol> *skipView;
-
-/**
- 是否使用右下角跳过按钮，默认为右上角
- 支持平台：穿山甲
- */
-@property (nonatomic, assign) BOOL needBottomSkipButton;
-
-/**
  屏蔽摇一摇、扭转手机
  默认NO：不屏蔽，YES：屏蔽
  支持平台：天目、优量汇(仅支持屏蔽摇一摇)、快手
  */
 @property (nonatomic, assign) BOOL disableMotion;
-
-/**
- 开屏广告是否支持服务端验证
- 支持平台：优量汇
- */
-- (BOOL)rewardAdCanServerVerrify;
 
 /**
 设置保底开屏 （可选）
@@ -202,12 +176,6 @@ viewControllerForPresentingModalView
  */
 - (void)adrf_splashAdCloseLandingPage:(ADRFMediationSDKSplashProAd *)splashAd;
 
-/**
- 开屏达到激励条件 （开启服务器验证后请使用服务端验证判断是否达到条件，无需使用本回调做激励达成判断）
- 
- @param splashAd 广告实例
- */
-- (void)adrf_splashAdDidRewardEffective:(ADRFMediationSDKSplashProAd *)splashAd info:(NSDictionary *)info;
 @end
 
 NS_ASSUME_NONNULL_END

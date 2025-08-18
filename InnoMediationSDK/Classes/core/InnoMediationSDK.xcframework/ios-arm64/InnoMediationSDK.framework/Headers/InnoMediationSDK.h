@@ -1,7 +1,7 @@
 //
 //  ADRFMediationSDK.h
 //  ADRFMediationSDK
-//  3.9.9.12038
+//  4.0.1.06133
 //  Created by 陈坤 on 2020/3/24.
 //  Updated by suancai on 2024/07/22 09:17.
 //
@@ -89,6 +89,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy, class) NSArray<ADRFMediationSDKCIDModel *> *cidInfos;
 
+/**
+ 是否自动初始化三方SDK；默认YES
+ */
+@property (nonatomic, assign, class) BOOL autoInitThirdSDK;
 
 /**
  设置请求广告的平台，可以指定平台加载广告
