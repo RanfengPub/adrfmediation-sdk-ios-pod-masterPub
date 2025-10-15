@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InnoMediationSDKPub'
-  s.version          = '4.0.1.06134'
+  s.version          = '4.0.1.06135'
   s.summary          = 'A mediation SDK for integrating multiple ad networks on iOS. '
   s.description      = 'A mediation SDK for integrating multiple ad networks on iOS. integrat gdt,badu,ks,gromore,ranfeng'
   s.homepage         = 'https://github.com/RanfengPub/adrfmediation-sdk-ios-pod-masterPub'
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
     sp.subspec 'gdt' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/gdt/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      ssp.dependency 'GDTMobSDK', '4.15.41'
+      ssp.dependency 'GDTMobSDK', '4.15.60'
     end
 
     sp.subspec 'gdt-without' do |ssp|
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
     sp.subspec 'baidu' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/baidu/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      ssp.dependency 'BaiduMobAdSDK', '5.394'
+      ssp.dependency 'BaiduMobAdSDK', '10.02'
     end
 
     sp.subspec 'baidu-without' do |ssp|
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
     sp.subspec 'ks' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/ks/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      ssp.dependency 'KSAdSDK', '4.6.30.1'
+      ssp.dependency 'KSAdSDK', '4.9.20.1'
     end
 
     sp.subspec 'ks-without' do |ssp|
@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
     sp.subspec 'bu' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/bu/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      ssp.dependency 'Ads-CN/BUAdSDK', '6.9.1.2'
+      ssp.dependency 'Ads-CN/BUAdSDK', '7.1.0.9'
     end
 
 
@@ -127,7 +127,7 @@ Pod::Spec.new do |s|
     sp.subspec 'gromore' do |ssp|
       ssp.vendored_frameworks = 'InnoMediationSDK/Classes/gromore/*.xcframework'
       ssp.dependency 'InnoMediationSDKPub/core'
-      # ssp.dependency 'Ads-CN-Beta/CSJMediation', '7.0.0.3'
+      # ssp.dependency 'Ads-CN-Beta/CSJMediation', '7.2.0.0'
     end
 
     # sp.subspec 'gromore-without' do |ssp|
